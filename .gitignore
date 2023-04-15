@@ -49,3 +49,6 @@ ios/
 analysis_options.yaml
 pubspec.lock
 .metadata
+
+**/*.g.dart
+**/*.freezed.dart

@@ -23,7 +23,7 @@ class SearchBar extends HookConsumerWidget {
             controller: controller,
             autovalidateMode: AutovalidateMode.onUserInteraction,
             enabled: enabled,
-            autofocus: true,
+            autofocus: false,
             cursorColor: Colors.black.withOpacity(0.4),
             cursorHeight: 20,
             style: const TextStyle(color: Colors.black, fontSize: 14),
