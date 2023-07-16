@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../lib.dart';
@@ -30,7 +31,7 @@ class NavigationView extends HookConsumerWidget {
   }
 
   static int selectedIndex(WidgetRef ref) {
-    final router = ref.read(routerProvider);
+    final router = GoRouterState.of(ref.context);
     final location = router.location;
 
     final recipeDetailsPath = router.namedLocation(RouteNames.recipeDetails);
