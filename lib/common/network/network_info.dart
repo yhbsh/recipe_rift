@@ -5,9 +5,9 @@ abstract class INetworkInfo {
 }
 
 class NetworkInfo implements INetworkInfo {
-  final Connectivity _connectivity;
+  // final Connectivity _connectivity;
 
-  const NetworkInfo({required Connectivity internetChecker}) : _connectivity = internetChecker;
+  const NetworkInfo({required Connectivity internetChecker});
   @override
   Future<bool> get isConnected async {
     return true;
