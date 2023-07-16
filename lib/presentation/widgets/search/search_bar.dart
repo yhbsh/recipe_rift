@@ -45,9 +45,9 @@ class SearchBar extends HookConsumerWidget {
               constraints: BoxConstraints(maxHeight: 48, maxWidth: size.width - 40),
               contentPadding: const EdgeInsets.symmetric(horizontal: 20),
               prefixIconColor: Colors.black.withOpacity(0.4),
-              prefixIcon: Row(
+              prefixIcon: const Row(
                 mainAxisSize: MainAxisSize.min,
-                children: const [
+                children: [
                   SizedBox(width: 8),
                   Icon(Icons.search),
                   SizedBox(width: 4),
@@ -55,9 +55,9 @@ class SearchBar extends HookConsumerWidget {
                 ],
               ),
               suffixIconColor: Colors.black.withOpacity(0.4),
-              suffixIcon: Row(
+              suffixIcon: const Row(
                 mainAxisSize: MainAxisSize.min,
-                children: const [
+                children: [
                   VerticalDivider(width: 1, endIndent: 10, indent: 10),
                   SizedBox(width: 8),
                   Icon(Icons.manage_search),
