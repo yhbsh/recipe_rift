@@ -17,9 +17,9 @@ abstract class IRemoteDataSource {
 }
 
 class RemoteDataSource implements IRemoteDataSource {
-  final Dio _dio;
+  // final Dio _dio;
 
-  const RemoteDataSource({required Dio dio}) : _dio = dio;
+  const RemoteDataSource({required Dio dio});
 
   @override
   Future<RecipesResponse> getRecipes({required GetRecipesRequest request}) async {
