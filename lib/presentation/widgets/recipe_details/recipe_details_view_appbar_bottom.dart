@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class RecipeDetailsViewAppbarBottom extends StatelessWidget with PreferredSizeWidget {
+class RecipeDetailsViewAppbarBottom extends StatelessWidget implements PreferredSizeWidget {
   const RecipeDetailsViewAppbarBottom({super.key});
 
   @override
