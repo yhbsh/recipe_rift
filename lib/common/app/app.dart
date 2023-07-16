@@ -15,7 +15,6 @@ class RecipesApp extends ConsumerWidget {
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
       themeMode: themeMode,
-      useInheritedMediaQuery: true,
     );
   }
 }
