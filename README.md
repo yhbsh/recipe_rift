@@ -1,4 +1,5 @@
-# Recipes Application
+# RecipeRift
+
 
 # Screenshots
 
