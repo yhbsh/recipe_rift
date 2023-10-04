@@ -53,7 +53,14 @@ class RecipeListViewItem extends HookWidget {
                         children: [
                           const Icon(Icons.star, color: Colors.white, size: 16),
                           const SizedBox(width: 4),
-                          Text('${recipe.score ?? 'No rating'}', style: textTheme.bodyMedium?.copyWith(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.white)),
+                          Text(
+                            recipe.score?.toStringAsFixed(2) ?? 'No rating',
+                            style: textTheme.bodyMedium?.copyWith(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white,
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -64,7 +71,8 @@ class RecipeListViewItem extends HookWidget {
             const SizedBox(height: 8),
             Text(name, style: textTheme.titleLarge?.copyWith(fontSize: 14, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis),
             const SizedBox(height: 8),
-            Text(description, style: textTheme.bodyMedium?.copyWith(fontSize: 12, fontWeight: FontWeight.w400), overflow: TextOverflow.ellipsis),
+            Text(description,
+                style: textTheme.bodyMedium?.copyWith(fontSize: 12, fontWeight: FontWeight.w400), overflow: TextOverflow.ellipsis),
           ],
         ),
       ),
